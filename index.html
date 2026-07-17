@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather & Packing Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>☁️ Weather & Packing Planner</h1>
+
+        <p>Check weather and plan your packing</p>
+
+    </header>
+
+
+
+    <!-- Search Bar -->
+
+    <div class="search-box">
+
+        <input 
+            type="text" 
+            id="cityInput"
+            placeholder="Search city (e.g. London)"
+        >
+
+        <button id="searchBtn">
+            🔍 Search
+        </button>
+
+    </div>
+
+
+
+
+    <!-- Dashboard Cards -->
+
+
+    <div class="dashboard">
+
+
+
+        <!-- Current Weather Card -->
+
+
+        <div class="card weather-card">
+
+
+            <h2>🌤 Current Weather</h2>
+
+
+            <h3 id="cityName">
+                City Name
+            </h3>
+
+
+            <img 
+                id="weatherIcon"
+                src=""
+                alt="weather icon"
+            >
+
+
+            <h1 id="temperature">
+                -- °C
+            </h1>
+
+
+            <p id="condition">
+                Condition
+            </p>
+
+
+            <div class="details">
+
+                <p>
+                    💧 Humidity:
+                    <span id="humidity">
+                        --
+                    </span>%
+                </p>
+
+
+                <p>
+                    💨 Wind Speed:
+                    <span id="wind">
+                        --
+                    </span>
+                    km/h
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Packing Recommendation Card -->
+
+
+        <div class="card">
+
+
+            <h2>
+                🎒 Packing Recommendations
+            </h2>
+
+
+            <p id="weatherStatus">
+                Weather condition will appear here
+            </p>
+
+
+
+            <ul id="packingList">
+
+
+                <li>
+                    Search a city to get suggestions
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Forecast Section -->
+
+
+    <div class="card forecast-section">
+
+
+        <h2>
+            📅 3 Day Forecast
+        </h2>
+
+
+
+        <div 
+            id="forecastContainer"
+            class="forecast-container"
+        >
+
+
+            <!-- Forecast cards will come from JavaScript -->
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
